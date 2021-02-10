@@ -1,81 +1,152 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Web Portfolio Page for calmeart</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <nav id="navbar">
-        <a class="nav-link" href=#welcome-section>About</a>
-        <a class="nav-link" href=#projects>Project</a>
-        <a class="nav-link" href=#contact-section>Contact</a>
-    </nav>
-    <main>
-        <section id="welcome-section">
-          <h1>I am Batuhan Doruk</h1>
-          <p>a freshly self-taught web developer with backend interest</p>
-        </section>
-        <section id="projects">
-          <h1>Projects</h1>
-          <h2>FreeCodeCamp Frontend Challenges</h2>
-          <div class="project-display">
-            <div class="project-tile">
-              <img class="project-pic" src="https://assets.codepen.io/4443635/internal/screenshots/pens/ExVobwv.default.png?fit=cover&format=auto&ha=true&height=720&quality=75&v=2&version=1588691885&width=1279"></img>
-            <a href="https://codepen.io/calmeart/full/ExVobwv" class="project-title" target="_blank">Markdown Previewer</a>
-            </div>
-            <div class="project-tile">
-              <img class="project-pic" src="https://assets.codepen.io/4443635/internal/screenshots/pens/mdeBMer.default.png?fit=cover&format=auto&ha=true&height=720&quality=75&v=2&version=1600265476&width=1279"></img>
-            <a href="https://codepen.io/calmeart/full/mdeBMer" class="project-title" target="_blank">Product Landing Page</a>
-            </div>
-            <div class="project-tile">
-              <img class="project-pic" src="https://assets.codepen.io/4443635/internal/screenshots/pens/YzyEEyO.default.png?fit=cover&format=auto&ha=true&height=720&quality=75&v=2&version=1588606902&width=1279"></img>
-            <a href="https://codepen.io/calmeart/full/YzyEEyO" class="project-title" target="_blank">Random Quote Machine</a>
-            </div>
-            <div class="project-tile">
-              <img class="project-pic" src="https://assets.codepen.io/4443635/internal/screenshots/pens/PoPROja.default.png?fit=cover&format=auto&ha=true&height=720&quality=75&v=2&version=1600643847&width=1279"></img>
-            <a href="https://codepen.io/calmeart/full/PoPROja" class="project-title" target="_blank">Pomodoro Clock</a>
-            </div>
-            <div class="project-tile">
-              <img class="project-pic" src="https://assets.codepen.io/4443635/internal/screenshots/pens/zYvMKLV.default.png?fit=cover&format=auto&ha=false&height=360&quality=75&v=2&version=1589881687&width=640"></img>
-            <a href="https://codepen.io/calmeart/full/zYvMKLV" class="project-title" target="_blank">Bar Chart</a>
-            </div>
-            <div class="project-tile">
-              <img class="project-pic" src="https://assets.codepen.io/4443635/internal/screenshots/pens/KKdrEjq.default.png?fit=cover&format=auto&ha=false&height=360&quality=75&v=2&version=1589968486&width=640"></img>
-            <a href="https://codepen.io/calmeart/full/KKdrEjq" class="project-title" target="_blank">Scatter Ploth Graph</a>
-            </div>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Batuhan Doruk Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quattrocento&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://kit.fontawesome.com/35029fdc91.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img class="navLogo" src="images/bd-logo.png" alt="site logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link mx-4" href="#about">ABOUT</a>
+          <a class="nav-link mx-4" href="#work">PROJECT</a>
+          <a class="nav-link mx-4" href="#contact">CONTACT</a>
+          <a class="nav-link mx-4" href="https://docs.google.com/document/d/16K6NJA63gxMsYgvVa8XqE09CkZeZMR8z/edit" target="_blank">RESUME</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="welcome">
+    <div class="container">
+      <div class="welcomeContent">
+        <h1 id="heading">Hello, my name is <span>Batuhan Doruk</span></h1>
+        <p>I am a back-end developer with a civil engineering background</p>
+      </div>
+    </div>
+    <p class="photoCredit">Photo by Pixabay from Pexels.</p>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="aboutContent">
+        <h2>About</h2>
+        <p>I am a self-taught JavaScript developer currently located in Lviv, Ukraine. I have been learning the terms of web development, mainly focused on back-end, through courses provided in freeCodeCamp, Udemy and various other web platforms, for
+          the past year.</p>
+        <p>I have a degree in civil engineering, and been professionally working for five years in technical office. I am highly accustomed to office work, project delivery and working well with other team members. </p>
+        <h3>Language and Technology</h3>
+        <div class="techImages">
+          <div class="techItem">
+            <i class="fab fa-html5 techLogo"></i>
+            <p class="techLabel">HTML</p>
           </div>
-          <a href="https://codepen.io/calmeart/pens/public?grid_type=grid&cursor=ZD0wJm89MSZwPTEmdj00NDUwNzkzOQ==" class="contact-link" target="_blank">SEE ALL</a>
-          <h2>FreeCodeCamp Backend Challenges</h2>
-          <div class="project-display">
-            <div class="project-tile">
-            <a href="https://glitch.com/~calm-fcc-exercise-tracker" class="project-title" target="_blank">Exercise Tracker</a>
-            </div>
-            <div class="project-tile">
-            <a href="https://glitch.com/~calm-fcc-metric-converter" class="project-title" target="_blank">Metric Converter</a>
-            </div>
-            <div class="project-tile">
-            <a href="https://glitch.com/~calm-fcc-url-shortener" class="project-title" target="_blank">URL Shortener</a>
-            </div>
-            <div class="project-tile">
-            <a href="https://glitch.com/~calm-fcc-headerparser" class="project-title" target="_blank">Header Parser</a>
-            </div>
-            <div class="project-tile">
-            <a href="https://glitch.com/~calm-fcc-timestamp" class="project-title" target="_blank">Time Stamp</a>
-            </div>
+          <div class="techItem">
+            <i class="fab fa-css3-alt techLogo"></i>
+            <p class="techLabel">CSS</p>
           </div>
-          <a href="https://glitch.com/@calmeart" class="contact-link" target="_blank">SEE ALL</a>
-        </section>
-        <section id="contact-section">
-          <h1>Contact Me</h1>
-          <div id="contact-display">
-            <a class="contact-link" href="https://www.facebook.com/b.doruk.ozturk" target="_blank">Facebook</a>
-            <a class="contact-link" id="profile-link" href="https://forum.freecodecamp.org/u/calmeart" target="_blank">FreeCodeCamp</a>
-            <a class="contact-link" href="https://github.com/Calmeart" target="_blank">Github</a>
-            <a class="contact-link" href="mailto:batuhandoruk91@gmail.com" target="_blank">E-mail</a>
+          <div class="techItem">
+            <i class="fab fa-node-js techLogo"></i>
+            <p class="techLabel">Node.js</p>
           </div>
-        </section>
-        
-      </main>
+          <div class="techItem">
+            <i class="fas fa-cogs techLogo"></i>
+            <p class="techLabel">Express</p>
+          </div>
+          <div class="techItem">
+            <i class="fab fa-react techLogo"></i>
+            <p class="techLabel">React</p>
+          </div>
+          <div class="techItem">
+            <i class="fab fa-bootstrap techLogo"></i>
+            <p class="techLabel">Bootstrap</p>
+          </div>
+          <div class="techItem">
+            <i class="fab fa-git-alt techLogo"></i>
+            <p class="techLabel">Git</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="container">
+      <div class="projectContent">
+        <div class="projectTitle">
+          <h2>Projects</h2>
+        </div>
+        <div class="projectBody">
+          <div class="row" id="projectContainer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="photoCredit">Photo by Pixabay from Pexels.</p>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contactContent">
+        <h2>Get in touch with me</h2>
+        <h5>...by using any platform below: </h5>
+        <div class="contactImages">
+          <a href="https://forum.freecodecamp.org/u/calmeart/summary" target="_blank"><i class="fab fa-free-code-camp contactLogo"></i></a>
+          <a href="https://github.com/calmeart" target="_blank"><i class="fab fa-github contactLogo"></i></a>
+          <a href="https://twitter.com/calmeart" target="_blank"><i class="fab fa-twitter contactLogo"></i></a>
+          <a href="mailto:batuhandoruk91@gmail.com" target="_blank"><i class="far fa-envelope contactLogo"></i></a>
+        </div>
+        <h5>...or by sending me a direct message: </h5>
+        <form class="contactForm" action="https://batuhandoruk.herokuapp.com/contact" method="post">
+          <div class="mb-1">
+            <label for="inputName" class="form-label mb-0">Your Name: </label>
+            <input class="inputArea w-100" type="text" name="inputName" id="inputName" autocomplete="off">
+          </div>
+          <div class="mb-1">
+            <label for="inputMail" class="form-label mb-0">Your E-mail: </label>
+            <input class="inputArea w-100" type="email" name="inputMail" id="inputMail" autocomplete="off">
+          </div>
+          <div class="mb-1">
+            <label for="inputMessage" class="form-label mb-0">Your Message: </label>
+          </div>
+          <textarea class="inputArea w-100 mb-1" name="inputMessage" id="inputMessage" rows="5" cols="80"></textarea>
+          <button class="btn w-100" type="submit" name="sendButton">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="footerContent">
+        <p>calmeart 2021</p>
+        <p>Portfolio v1.0.0</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
   </body>
-</html>
+
+  </html>
