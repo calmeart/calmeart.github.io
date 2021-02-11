@@ -37,12 +37,12 @@ const projects = [
   }
 ];
 
-console.log("index js works");
 document.body.onload = displayProjects;
 
+const sendButton = document.getElementById("sendButton");
+sendButton.addEventListener('click', handleSendMessage);
 
 function listingTechItems(techs) {
-  console.log("listing Items works");
   const list = document.createElement("ul");
   list.setAttribute("class", "list-group");
 
@@ -57,7 +57,6 @@ function listingTechItems(techs) {
 };
 
 function createProjects(title, description, techs, image, website) {
-  console.log("createProjects works");
 
   const cols = document.createElement("div");
   cols.setAttribute("class", "col-xl-4 col-lg-6");
@@ -88,11 +87,14 @@ function createProjects(title, description, techs, image, website) {
 };
 
 function displayProjects() {
-  console.log("displayProjects works");
   projects.forEach(item => {
     const cols = createProjects(item.title, item.description, item.techs, item.image, item.website);
     document.getElementById("projectContainer").append(cols);
   })
+};
+
+function handleSendMessage() {
+  document.getElementById("messageSending").style.visibility = "visible";
 };
 
 

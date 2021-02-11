@@ -182,7 +182,7 @@ span {
   margin: 20px 0;
 }
 
-@media (max-width: 992px) and (min-device-width:576px) {
+@media (max-width: 992px) and (min-device-width: 576px) {
   .techImages::after {
     content: "";
     flex: auto;
@@ -195,8 +195,31 @@ span {
 }
 
 .techLogo {
-  font-size: 50px;
+  font-size: 3rem;
   color: var(--icon-color);
+}
+
+.techLabel {
+  font-size: 1rem;
+}
+
+@media only screen and (max-device-width: 576px) {
+  .techLogo {
+    font-size: 4rem;
+  }
+
+  .techLabel {
+    font-size: 1.5rem;
+  }
+
+  .techItem {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .techImages {
+    align-items: center;
+  }
 }
 
 /*******************************WORKS SECTION********************************/
@@ -394,4 +417,30 @@ input, textarea {
    display: flex;
    justify-content: space-between;
    background-color: var(--bs-gray-dark);
+ }
+
+ /********************LOADING MESSAGE**************************************/
+ #messageSending {
+   visibility: hidden;
+   background-color: var(--main-color);
+   color: black;
+   border: 2px solid var(--highlight-color);
+   border-radius: 20px;
+   text-align: center;
+   z-index: 2000;
+ }
+
+ #messageSending p {
+   padding: 20px;
+   font-weight: bold;
+ }
+
+ .spinner-border {
+   color: var(--highlight-color);
+ }
+
+ @media only screen and (max-device-width: 576px) {
+   .messageSending {
+     width: 80%;
+   }
  }
