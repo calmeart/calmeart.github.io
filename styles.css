@@ -86,7 +86,7 @@ span {
   }
   .listItem {
     font-size: 1.4rem;
-    height: auto !important;
+    height: 36px !important;
   }
 }
 
