@@ -1,46 +1,44 @@
-
-const projects = [
-  {
-    "title" : "Loungelite",
-    "description" : "A wannabe social media site created to exercise session cookies, passport and oauth authentications",
-    "techs" : [ "Node.js", "Express", "Express-session", "Passport", "OAuth", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap" ],
-    "image" : "https://i.ibb.co/NLLK5tR/loungelite-portfolio.png",
-    "website" :"https://loungelite.herokuapp.com/"
+const projects = [{
+    "title": "Loungelite",
+    "description": "A wannabe social media site created to exercise session cookies, passport and oauth authentications",
+    "techs": ["Node.js", "Express", "Express-session", "Passport", "OAuth", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
+    "image": "https://i.ibb.co/NLLK5tR/loungelite-portfolio.png",
+    "website": "https://loungelite.herokuapp.com/"
   },
   {
-    "title" : "2dooAgenda",
-    "description" : "A to-do list application for tracking tasks around the calendar. Created as a product of Angela Yu's Bootcamp in Udemy.",
-    "techs" : [ "Node.js", "Express", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap" ],
-    "image" : "https://i.ibb.co/V2gcXzz/twodooagenda-portfolio.png",
-    "website" :"https://twodooagenda.herokuapp.com/"
+    "title": "2dooAgenda",
+    "description": "A to-do list application for tracking tasks around the calendar. Created as a product of Angela Yu's Bootcamp in Udemy.",
+    "techs": ["Node.js", "Express", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
+    "image": "https://i.ibb.co/V2gcXzz/twodooagenda-portfolio.png",
+    "website": "https://twodooagenda.herokuapp.com/"
   },
   {
-    "title" : "Simon Game",
-    "description" : "An implementation of the memory skill game invented by Ralph H. Baer and Howard J. Morrison for exercise purposes",
-    "techs" : [ "HTML", "CSS", "JavaScript", "jQuery" ],
-    "image" : "https://i.ibb.co/prq7np1/simon-game-portfolio.png",
-    "website" : "https://calmeart.github.io/simon-game/"
+    "title": "Simon Game",
+    "description": "An implementation of the memory skill game invented by Ralph H. Baer and Howard J. Morrison for exercise purposes",
+    "techs": ["HTML", "CSS", "JavaScript", "jQuery"],
+    "image": "https://i.ibb.co/prq7np1/simon-game-portfolio.png",
+    "website": "https://calmeart.github.io/simon-game/"
   },
   {
-    "title" : "JavaScript Calculator",
-    "description" : "Simple calculator challenge from freeCodeCamp Front End Libraries Projects",
-    "techs" : [ "HTML", "CSS", "React" ],
-    "image" : "https://i.ibb.co/6mt2jtP/fcc-calculator.png",
-    "website" : "https://codepen.io/calmeart/full/JjKwJyZ"
+    "title": "JavaScript Calculator",
+    "description": "Simple calculator challenge from freeCodeCamp Front End Libraries Projects",
+    "techs": ["HTML", "CSS", "React"],
+    "image": "https://i.ibb.co/6mt2jtP/fcc-calculator.png",
+    "website": "https://codepen.io/calmeart/full/JjKwJyZ"
   },
   {
-    "title" : "Pomodoro Clock",
-    "description" : "Pomodoro Clock challenge from freeCodeCamp Front End Libraries Projects",
-    "techs" : [ "HTML", "CSS", "React" ],
-    "image" : "https://i.ibb.co/rcrYpCf/fcc-pomodoro-clock.png",
-    "website" : "https://codepen.io/calmeart/full/PoPROja"
+    "title": "Pomodoro Clock",
+    "description": "Pomodoro Clock challenge from freeCodeCamp Front End Libraries Projects",
+    "techs": ["HTML", "CSS", "React"],
+    "image": "https://i.ibb.co/rcrYpCf/fcc-pomodoro-clock.png",
+    "website": "https://codepen.io/calmeart/full/PoPROja"
   },
   {
-    "title" : "Random Quote Machine",
-    "description" : "Random Quote Machine challenge from freeCodeCamp Front End Libraries Projects",
-    "techs" : [ "HTML", "CSS", "React" ],
-    "image" : "https://i.ibb.co/WWnMXZP/fcc-random-quote.png",
-    "website" : "https://codepen.io/calmeart/full/YzyEEyO"
+    "title": "Random Quote Machine",
+    "description": "Random Quote Machine challenge from freeCodeCamp Front End Libraries Projects",
+    "techs": ["HTML", "CSS", "React"],
+    "image": "https://i.ibb.co/WWnMXZP/fcc-random-quote.png",
+    "website": "https://codepen.io/calmeart/full/YzyEEyO"
   }
 ];
 
@@ -100,8 +98,12 @@ function displayProjects() {
   })
 };
 
-function handleSendMessage() {
-  document.getElementById("messageSending").style.visibility = "visible";
+function handleSendMessage(e) {
+  if (!isValid) {
+    e.preventDefault(); //stop form from submitting
+  } else {
+    document.getElementById("messageSending").style.visibility = "visible";
+  }
 };
 
 
