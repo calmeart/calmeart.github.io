@@ -46,8 +46,8 @@ const projects = [
 
 document.body.onload = displayProjects;
 
-const sendButton = document.getElementById("sendButton");
-sendButton.addEventListener('click', handleSendMessage);
+const sendButton = document.getElementById("contactForm");
+sendButton.addEventListener('submit', handleSendMessage);
 
 function listingTechItems(techs) {
   const list = document.createElement("ul");
