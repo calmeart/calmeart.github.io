@@ -99,11 +99,7 @@ function displayProjects() {
 };
 
 function handleSendMessage(e) {
-  if (!isValid) {
-    e.preventDefault(); //stop form from submitting
-  } else {
-    document.getElementById("messageSending").style.visibility = "visible";
-  }
+  document.getElementById("messageSending").style.visibility = "visible";
 };
 
 
