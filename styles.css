@@ -242,6 +242,11 @@ span {
   padding: 50px;
 }
 
+.projectTitle p {
+  text-align: center;
+  color: var(--icon-color);
+}
+
 /* .projectBody {
   margin-left: -50px;
   margin-right: -50px;
