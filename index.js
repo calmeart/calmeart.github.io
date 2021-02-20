@@ -9,7 +9,7 @@ const projects = [{
     "title": "2dooAgenda",
     "description": "A to-do list application for tracking tasks around the calendar. Created as a product of Angela Yu's Bootcamp in Udemy.",
     "techs": ["Node.js", "Express", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
-    "image": "https://i.ibb.co/V2gcXzz/twodooagenda-portfolio.png",
+    "image": "https://i.ibb.co/6gjXbMb/twodooagenda-portfolio.jpg",
     "website": "https://twodooagenda.herokuapp.com/"
   },
   {
@@ -23,7 +23,7 @@ const projects = [{
     "title": "JavaScript Calculator",
     "description": "Simple calculator challenge from freeCodeCamp Front End Libraries Projects",
     "techs": ["HTML", "CSS", "React"],
-    "image": "https://i.ibb.co/6mt2jtP/fcc-calculator.png",
+    "image": "https://i.ibb.co/LtGm9Z8/fcc-calculator.jpg",
     "website": "https://codepen.io/calmeart/full/JjKwJyZ"
   },
   {
