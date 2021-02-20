@@ -60,33 +60,16 @@ span {
   font-size: 0.6rem;
 }
 
-@media only screen and (max-device-width: 576px) {
+@media (max-width: 576px) {
+
   h1 {
-    font-size: 3.5rem;
-  }
-  h2 {
-    font-size: 2.8rem;
-  }
-  h3 {
-    font-size: 2.4rem;
-    padding-top: 20px;
+    font-size: 1.5rem;
   }
   h5 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   p {
-    font-size: 2rem;
-  }
-  .nav-link {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .techLabel {
-    font-size: 1.4rem;
-  }
-  .listItem {
-    font-size: 1.4rem;
-    height: 36px !important;
+    font-size: 0.8rem;
   }
 }
 
@@ -102,23 +85,31 @@ span {
   margin-left: 50px;
 }
 
-.navbar-collapse {
+.navbar-nav {
+  flex-direction: row;
   justify-content: flex-end;
 }
 
-@media (max-width: 992px) {
-  .navbar-collapse {
-    width: 100%;
+@media (max-width: 576px) {
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .navLogo {
+    margin-left: 0;
+    width: 40px;
+    padding: 0;
+  }
+  .nav-link {
+    font-size: .8rem;
+    font-weight: bold;
   }
 }
 
-@media only screen and (max-device-width: 576px) {
-  .container {
-    max-width: none;
-    width: 95%;
-  }
-  .nav-logo {
-    margin-left: 0;
+@media (max-width: 355px) {
+
+  .nav-link {
+    font-size: .6rem;
   }
 }
 
@@ -130,7 +121,7 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
-  height: 100vh;
+  height: calc(100vh - 116px);
   position: relative;
 }
 
@@ -143,17 +134,23 @@ span {
   padding-top: 30vh;
 }
 
-@media only screen and (max-device-width: 576px) {
+@media (max-width: 576px) {
   #welcome {
-    height: 50vh;
+    height: 60vh;
   }
+
   .welcomeContent {
     margin: auto;
     text-align: center;
+    padding: 0;
+    width: 80%;
   }
   #heading {
-    padding: 20vh 10% 50px;
+    padding: 15vh 0 2vh;
+    max-width: 230px;
+    margin: auto;
   }
+
 }
 
 /********************************ABOUT SECTION******************************/
@@ -171,6 +168,7 @@ span {
   margin: auto;
   padding: 50px;
   border-radius: 2rem;
+  text-align: justify;
   overflow: visible;
   z-index: 1000;
 }
@@ -182,7 +180,7 @@ span {
   margin: 20px 0;
 }
 
-@media (max-width: 992px) and (min-device-width: 576px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .techImages::after {
     content: "";
     flex: auto;
@@ -203,22 +201,27 @@ span {
   font-size: 1rem;
 }
 
-@media only screen and (max-device-width: 576px) {
-  .techLogo {
-    font-size: 4rem;
-  }
-
-  .techLabel {
-    font-size: 1.5rem;
-  }
-
-  .techItem {
-    margin-left: 40px;
-    margin-right: 40px;
+@media (max-width: 576px) {
+  .aboutContent {
+    padding: 20px;
+    border-radius: 1rem;
   }
 
   .techImages {
     align-items: center;
+  }
+
+  .techItem {
+    min-width: 80px;
+  }
+
+  .techLogo {
+    font-size: 2rem;
+    color: var(--icon-color);
+  }
+
+  .techLabel {
+    font-size: .8rem;
   }
 }
 
@@ -246,11 +249,6 @@ span {
   text-align: center;
   color: var(--icon-color);
 }
-
-/* .projectBody {
-  margin-left: -50px;
-  margin-right: -50px;
-} */
 
 .row {
   justify-content: space-between;
@@ -293,7 +291,6 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1rem;
-  min-height: 106px;
 }
 
 .listItem {
@@ -304,6 +301,23 @@ span {
   padding: 0.1rem 0.5rem;
   margin: 0.2rem;
   height: 30px;
+}
+
+@media (max-width: 576px) {
+  .projectContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row {
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+  }
+
+  .listItem {
+    font-size: .8rem;
+    height: 25px;
+  }
+
 }
 
 /***************************CONTACT SECTION**********************************/
@@ -320,7 +334,7 @@ span {
   bottom: 50px;
   width: 100%;
   margin: auto;
-  padding: 50px;
+  padding: 50px 10px;
   border-radius: 2rem;
   overflow: visible;
   z-index: 1000;
@@ -351,6 +365,7 @@ span {
 .contactForm {
   width: 60%;
   margin: auto;
+  margin-top: 20px;
   text-align: left;
 }
 
@@ -375,18 +390,17 @@ input, textarea {
   color: var(--font-color);
 }
 
-@media only screen and (max-device-width: 576px) {
+@media (max-width: 768px) {
+  .contactContent {
+    border-radius: 1rem;
+  }
   .contactForm {
     width: 80%;
   }
-  .form-label {
-    font-size: 1.4rem;
-  }
-  input {
-    line-height: 2;
+  .contactLogo {
+    font-size: 2rem;
   }
 }
-
 
 /***************************FOOTER SECTION***********************************/
  footer {
@@ -427,8 +441,8 @@ input, textarea {
    color: var(--highlight-color);
  }
 
- @media only screen and (max-device-width: 576px) {
-   .messageSending {
+ @media (max-width: 576px) {
+   #messageSending {
      width: 80%;
    }
  }
