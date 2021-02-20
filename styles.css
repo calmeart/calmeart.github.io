@@ -283,10 +283,6 @@ span {
   border-top-right-radius: calc(1rem - 1px);
 }
 
-.card-body {
-  min-height: 136px;
-}
-
 .list-group {
   flex-direction: row;
   flex-wrap: wrap;
