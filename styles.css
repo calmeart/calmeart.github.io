@@ -288,6 +288,8 @@ span {
 .card-img-top {
   border-top-left-radius: calc(1rem - 1px);
   border-top-right-radius: calc(1rem - 1px);
+  width: 100%;
+  height: auto;
 }
 
 .list-group {

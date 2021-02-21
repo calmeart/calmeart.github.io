@@ -2,7 +2,7 @@ const projects = [{
     "title": "Loungelite",
     "description": "A wannabe social media site created to exercise session cookies, passport and oauth authentications",
     "techs": ["Node.js", "Express", "Express-session", "Passport", "OAuth", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
-    "image": "https://i.ibb.co/NLLK5tR/loungelite-portfolio.png",
+    "image": "https://i.ibb.co/Dz82Tdf/loungelite-portfolio.jpg",
     "website": "https://loungelite.herokuapp.com/"
   },
   {
@@ -16,28 +16,28 @@ const projects = [{
     "title": "Simon Game",
     "description": "An implementation of the memory skill game invented by Ralph H. Baer and Howard J. Morrison for exercise purposes",
     "techs": ["HTML", "CSS", "JavaScript", "jQuery"],
-    "image": "https://i.ibb.co/prq7np1/simon-game-portfolio.png",
+    "image": "https://i.ibb.co/vkL2zMB/simon-game-portfolio.jpg",
     "website": "https://calmeart.github.io/simon-game/"
   },
   {
     "title": "JavaScript Calculator",
     "description": "Simple calculator challenge from freeCodeCamp Front End Libraries Projects",
     "techs": ["HTML", "CSS", "React"],
-    "image": "https://i.ibb.co/LtGm9Z8/fcc-calculator.jpg",
+    "image": "https://i.ibb.co/Jmm3g0B/fcc-calculator.jpg",
     "website": "https://codepen.io/calmeart/full/JjKwJyZ"
   },
   {
     "title": "Pomodoro Clock",
     "description": "Pomodoro Clock challenge from freeCodeCamp Front End Libraries Projects",
     "techs": ["HTML", "CSS", "React"],
-    "image": "https://i.ibb.co/rcrYpCf/fcc-pomodoro-clock.png",
+    "image": "https://i.ibb.co/TTvShtz/fcc-pomodoro-clock.jpg",
     "website": "https://codepen.io/calmeart/full/PoPROja"
   },
   {
     "title": "Random Quote Machine",
     "description": "Random Quote Machine challenge from freeCodeCamp Front End Libraries Projects",
     "techs": ["HTML", "CSS", "React"],
-    "image": "https://i.ibb.co/WWnMXZP/fcc-random-quote.png",
+    "image": "https://i.ibb.co/6XGc8LD/fcc-random-quote.jpg",
     "website": "https://codepen.io/calmeart/full/YzyEEyO"
   }
 ];
@@ -76,7 +76,9 @@ function createProjects(title, description, techs, image, website) {
   const projectImage = document.createElement("img");
   projectImage.setAttribute("src", image);
   projectImage.setAttribute("class", "card-img-top");
-  projectImage.setAttribute("alt", title + "image");
+  projectImage.setAttribute("alt", title + " image");
+  projectImage.setAttribute("height", "200px");
+  projectImage.setAttribute("width", "400px");
 
   anchor.append(projectImage);
 
