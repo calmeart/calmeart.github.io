@@ -90,6 +90,7 @@ span {
 }
 
 .navbar-nav {
+  flex-direction: row;
   justify-content: flex-end;
 }
 
@@ -103,6 +104,10 @@ span {
     width: 40px;
     padding: 0;
   }
+  .navbar-nav {
+    width: calc(100% - 50px);
+    justify-content: space-between;
+  }
   .nav-link {
     font-size: .8rem;
     font-weight: bold;
@@ -110,7 +115,6 @@ span {
 }
 
 @media (max-width: 355px) {
-
   .nav-link {
     font-size: .6rem;
   }
