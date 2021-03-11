@@ -1,16 +1,17 @@
-const projects = [{
-    "title": "Loungelite",
-    "description": "A wannabe social media site created to exercise session cookies, passport and oauth authentications",
-    "techs": ["Node.js", "Express", "Express-session", "Passport", "OAuth", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
-    "image": "https://i.ibb.co/Dz82Tdf/loungelite-portfolio.jpg",
-    "website": "https://loungelite.herokuapp.com/"
-  },
+const projects = [
   {
     "title": "2dooAgenda",
     "description": "A to-do list application for tracking tasks around the calendar. Created as a product of Angela Yu's Bootcamp in Udemy.",
     "techs": ["Node.js", "Express", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
     "image": "https://i.ibb.co/6gjXbMb/twodooagenda-portfolio.jpg",
     "website": "https://twodooagenda.herokuapp.com/"
+  },
+  {
+    "title": "Loungelite",
+    "description": "A wannabe social media site created to exercise session cookies, passport and oauth authentications",
+    "techs": ["Node.js", "Express", "Express-session", "Passport", "OAuth", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
+    "image": "https://i.ibb.co/Dz82Tdf/loungelite-portfolio.jpg",
+    "website": "https://loungelite.herokuapp.com/"
   },
   {
     "title": "Simon Game",
