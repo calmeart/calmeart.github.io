@@ -122,19 +122,20 @@
           <a href="mailto:batuhandoruk91@gmail.com" target="_blank"><i class="far fa-envelope contactLogo"></i></a>
         </div>
         <h5>...or by sending me a direct message: </h5>
-        <form class="contactForm" id="contactForm" action="https://batuhandoruk.herokuapp.com/contact" method="post">
+        <form class="contactForm" id="contactForm" action="https://postamapi.herokuapp.com/messages" method="post">
           <div class="mb-1">
             <label for="inputName" class="form-label mb-0">Your Name: </label>
-            <input class="inputArea w-100" type="text" name="inputName" id="inputName" autocomplete="off" required>
+            <input class="inputArea w-100" type="text" name="senderName" id="inputName" autocomplete="off" required>
           </div>
           <div class="mb-1">
             <label for="inputMail" class="form-label mb-0">Your E-mail: </label>
-            <input class="inputArea w-100" type="email" name="inputMail" id="inputMail" autocomplete="off" required>
+            <input class="inputArea w-100" type="email" name="senderMail" id="inputMail" autocomplete="off" required>
           </div>
           <div class="mb-1">
             <label for="inputMessage" class="form-label mb-0">Your Message: </label>
           </div>
-          <textarea class="inputArea w-100 mb-1" name="inputMessage" id="inputMessage" rows="5" cols="80" required></textarea>
+          <textarea class="inputArea w-100 mb-1" name="body" id="inputMessage" rows="5" cols="80" required></textarea>
+          <input type="hidden" name="platformId" value="604d2f9108886513b0663b2d">
           <button class="btn w-100" type="submit" name="sendButton" id="sendButton">Send Message</button>
         </form>
       </div>
