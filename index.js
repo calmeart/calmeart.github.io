@@ -4,21 +4,24 @@ const projects = [
     "description": "A to-do list application for tracking tasks around the calendar. Created as a product of Angela Yu's Bootcamp in Udemy.",
     "techs": ["Node.js", "Express", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
     "image": "https://i.ibb.co/6gjXbMb/twodooagenda-portfolio.jpg",
-    "website": "https://twodooagenda.herokuapp.com/"
+    "website": "https://twodooagenda.herokuapp.com/",
+    "github": "https://github.com/calmeart/2dooagenda"
   },
   {
     "title": "Loungelite",
     "description": "A wannabe social media site created to exercise session cookies, passport and oauth authentications",
     "techs": ["Node.js", "Express", "Express-session", "Passport", "OAuth", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
     "image": "https://i.ibb.co/Dz82Tdf/loungelite-portfolio.jpg",
-    "website": "https://loungelite.herokuapp.com/"
+    "website": "https://loungelite.herokuapp.com/",
+    "github": "https://github.com/calmeart/loungelite"
   },
   {
     "title": "Simon Game",
     "description": "An implementation of the memory skill game invented by Ralph H. Baer and Howard J. Morrison for exercise purposes",
     "techs": ["HTML", "CSS", "JavaScript", "jQuery"],
     "image": "https://i.ibb.co/vkL2zMB/simon-game-portfolio.jpg",
-    "website": "https://calmeart.github.io/simon-game/"
+    "website": "https://calmeart.github.io/simon-game/",
+    "github": "https://github.com/calmeart/simon-game"
   },
   {
     "title": "JavaScript Calculator",
@@ -62,7 +65,7 @@ function listingTechItems(techs) {
   return list;
 };
 
-function createProjects(title, description, techs, image, website) {
+function createProjects(title, description, techs, image, website, github) {
 
   const cols = document.createElement("div");
   cols.setAttribute("class", "col-xl-4 col-lg-6");
@@ -85,7 +88,20 @@ function createProjects(title, description, techs, image, website) {
 
   const cardBody = document.createElement("div");
   cardBody.setAttribute("class", "card-body");
-  cardBody.innerHTML = '<h5 class="card-title">' + title + '</h5><p class="card-text">' + description + '</p>'
+
+  if (github) {
+    const headerBox = document.createElement("div");
+    headerBox.setAttribute("class", "flexHeader");
+    headerBox.innerHTML = '<h5 class="card-title">' + title + '</h5><a href=' + github + ' target="_blank"><i class="fab fa-github githubLogo"></i></a>';
+    cardBody.append(headerBox);
+    const cardBodyText = document.createElement("p");
+    cardBodyText.setAttribute("class", "card-text");
+    cardBodyText.innerHTML = description;
+    cardBody.append(cardBodyText);
+  } else {
+    cardBody.innerHTML = '<h5 class="card-title">' + title + '</h5><p class="card-text">' + description + '</p>'
+  }
+
 
   const techList = listingTechItems(techs);
   card.append(anchor, cardBody, techList);
@@ -96,7 +112,7 @@ function createProjects(title, description, techs, image, website) {
 
 function displayProjects() {
   projects.forEach(item => {
-    const cols = createProjects(item.title, item.description, item.techs, item.image, item.website);
+    const cols = createProjects(item.title, item.description, item.techs, item.image, item.website, item.github);
     document.getElementById("projectContainer").append(cols);
   })
 };

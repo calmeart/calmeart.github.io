@@ -308,6 +308,22 @@ span {
   height: 30px;
 }
 
+.flexHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.githubLogo {
+  font-size: 1.75rem;
+  color: var(--icon-color);
+}
+
+.githubLogo:hover {
+  color: var(--highlight-color);
+  transition: all 0.5s;
+}
+
 @media (max-width: 576px) {
   .projectContent {
     padding-left: 0;
