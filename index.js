@@ -6,6 +6,13 @@ const projects = [
     "image": "https://i.ibb.co/6gjXbMb/twodooagenda-portfolio.jpg",
     "website": "https://twodooagenda.herokuapp.com/",
     "github": "https://github.com/calmeart/2dooagenda"
+  },{
+    "title": "ShilaProduct",
+    "description": "An exercise application for a future solo project that uses GraphQL in order to create and display products.",
+    "techs": ["Node.js", "React", "Express", "GraphQL", "Apollo", "MongoDB", "HTML", "CSS", "Bootstrap"],
+    "image": "https://i.ibb.co/vv2TQpz/shila-product.jpg",
+    "website": "https://shilaproduct.herokuapp.com/",
+    "github": "https://github.com/calmeart/cadishila"
   },
   {
     "title": "Loungelite",
@@ -36,13 +43,6 @@ const projects = [
     "techs": ["HTML", "CSS", "React"],
     "image": "https://i.ibb.co/TTvShtz/fcc-pomodoro-clock.jpg",
     "website": "https://codepen.io/calmeart/full/PoPROja"
-  },
-  {
-    "title": "Random Quote Machine",
-    "description": "Random Quote Machine challenge from freeCodeCamp Front End Libraries Projects",
-    "techs": ["HTML", "CSS", "React"],
-    "image": "https://i.ibb.co/6XGc8LD/fcc-random-quote.jpg",
-    "website": "https://codepen.io/calmeart/full/YzyEEyO"
   }
 ];
 
@@ -136,3 +136,11 @@ function handleSendMessage(e) {
 //     </ul>
 //   </div>
 // </div>
+// ,
+// {
+//   "title": "Random Quote Machine",
+//   "description": "Random Quote Machine challenge from freeCodeCamp Front End Libraries Projects",
+//   "techs": ["HTML", "CSS", "React"],
+//   "image": "https://i.ibb.co/6XGc8LD/fcc-random-quote.jpg",
+//   "website": "https://codepen.io/calmeart/full/YzyEEyO"
+// }
