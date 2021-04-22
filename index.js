@@ -2,7 +2,7 @@ const projects = [
   {
     "title": "ShilaBurda (in progress)",
     "description": "An application demo of a future ECommerce site for my sister's handmade products. The application has product display, review, order, login systems and an admin portal that can manage products, users and orders. Work is still on progress.",
-    "techs": ["Node.js", "Express", "React", "GraphQL", "Apollo", "MongoDB", "HTML", "CSS", "Bootstrap"],
+    "techs": ["Node.js", "Express", "React", "JWT", "GraphQL", "Apollo", "MongoDB", "HTML", "CSS", "Bootstrap"],
     "image": "https://i.ibb.co/6gCR3mm/shila-burda.jpg",
     "website": "https://shilaproduct.herokuapp.com/",
     "github": "https://github.com/calmeart/cadishila"
@@ -51,6 +51,24 @@ document.body.onload = displayProjects;
 
 const sendButton = document.getElementById("contactForm");
 sendButton.addEventListener('submit', handleSendMessage);
+
+function handleSendMessage(e) {
+  document.getElementById("messageSending").style.visibility = "visible";
+};
+
+function alignIcons() {
+  const techItems = document.getElementsByClassName("techItem");
+  const techContainer = document.getElementById("techImages");
+  let count = 0;
+  Array.from(techItems).forEach(item => {
+    if (item.offsetTop - techContainer.offsetTop === 0) {
+      count++
+    }
+  });
+  Array.from(techItems).forEach(item => {
+    item.style.width = (techContainer.offsetWidth / count).toString() + "px";
+  });
+};
 
 function listingTechItems(techs) {
   const list = document.createElement("ul");
@@ -116,32 +134,5 @@ function displayProjects() {
     const cols = createProjects(item.title, item.description, item.techs, item.image, item.website, item.github);
     document.getElementById("projectContainer").append(cols);
   })
+  alignIcons();
 };
-
-function handleSendMessage(e) {
-  document.getElementById("messageSending").style.visibility = "visible";
-};
-
-
-
-
-// <div class="col-xl-4 col-lg-6">
-//   <div class="card">
-//     <a href="https://twodooagenda.herokuapp.com/" target="_blank"><img src="https://i.ibb.co/V2gcXzz/twodooagenda-portfolio.png" class="card-img-top" alt="project image"></a>
-//     <div class="card-body">
-//       <h5 class="card-title">2dooAgenda</h5>
-//       <p class="card-text">A to-do list application for tracking tasks around the calendar. Created as a product of Angela Yu's Bootcamp in Udemy.</p>
-//     </div>
-//     <ul class="list-group">
-//       <li class="listItem">Node.js</li>
-//     </ul>
-//   </div>
-// </div>
-// ,
-// {
-//   "title": "Random Quote Machine",
-//   "description": "Random Quote Machine challenge from freeCodeCamp Front End Libraries Projects",
-//   "techs": ["HTML", "CSS", "React"],
-//   "image": "https://i.ibb.co/6XGc8LD/fcc-random-quote.jpg",
-//   "website": "https://codepen.io/calmeart/full/YzyEEyO"
-// }
