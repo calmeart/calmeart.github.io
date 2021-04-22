@@ -1,18 +1,19 @@
 const projects = [
   {
+    "title": "ShilaBurda (in progress)",
+    "description": "An application demo of a future ECommerce site for my sister's handmade products. The application has product display, review, order, login systems and an admin portal that can manage products, users and orders. Work is still on progress.",
+    "techs": ["Node.js", "Express", "React", "GraphQL", "Apollo", "MongoDB", "HTML", "CSS", "Bootstrap"],
+    "image": "https://i.ibb.co/6gCR3mm/shila-burda.jpg",
+    "website": "https://shilaproduct.herokuapp.com/",
+    "github": "https://github.com/calmeart/cadishila"
+  },
+  {
     "title": "2dooAgenda",
     "description": "A to-do list application for tracking tasks around the calendar. Created as a product of Angela Yu's Bootcamp in Udemy.",
     "techs": ["Node.js", "Express", "EJS", "MongoDB", "HTML", "CSS", "Bootstrap"],
     "image": "https://i.ibb.co/6gjXbMb/twodooagenda-portfolio.jpg",
     "website": "https://twodooagenda.herokuapp.com/",
     "github": "https://github.com/calmeart/2dooagenda"
-  },{
-    "title": "ShilaProduct",
-    "description": "An exercise application for a future solo project that uses GraphQL in order to create and display products.",
-    "techs": ["Node.js", "React", "Express", "GraphQL", "Apollo", "MongoDB", "HTML", "CSS", "Bootstrap"],
-    "image": "https://i.ibb.co/vv2TQpz/shila-product.jpg",
-    "website": "https://shilaproduct.herokuapp.com/",
-    "github": "https://github.com/calmeart/cadishila"
   },
   {
     "title": "Loungelite",
