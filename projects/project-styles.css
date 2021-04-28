@@ -1,0 +1,50 @@
+:root {
+  --main-color: #78bbe6;
+  --second-color: #1b435d;
+  --font-color: #d5eeff;
+  --icon-color: #ff895d;
+  --highlight-color: #f16821;
+}
+
+#projects {
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 1) 90%),
+  url('../images/interior-empty-lot.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+  position: relative;
+  min-height: 100vh;
+}
+
+.projectsViewPort {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  min-height: calc(100vh - 216px);
+  border: 2px solid var(--second-color);
+  border-radius: 2rem;
+}
+
+.filterNav {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  background-color: var(--second-color);
+  width: 200px;
+  height: 100%;
+  border-radius: 2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.sortNav {
+  position: absolute;
+  top: 0;
+  left: 198px;
+  background-color: var(--second-color);
+  width: calc(100% - 196px);
+  height: 50px;
+  border-top-right-radius: 2rem;
+}
