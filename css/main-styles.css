@@ -1,0 +1,135 @@
+/* CSS Content: html, body, html tags, navbar, footer */
+:root {
+  --main-color: #78bbe6;
+  --second-color: #1b435d;
+  --font-color: #d5eeff;
+  --icon-color: #ff895d;
+  --highlight-color: #f16821;
+}
+
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--second-color);
+  color: var(--font-color);
+}
+
+h1 {
+  font-family: 'Quattrocento', serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Quattrocento', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Quattrocento', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--icon-color);
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+span {
+  color: var(--highlight-color);
+}
+
+.photoCredit {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  color: gray;
+  font-size: 0.6rem;
+}
+
+@media (max-width: 576px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/*****NAVBAR*****/
+
+.navbar {
+  background-color: var(--second-color) !important;
+}
+
+.navLogo {
+  width: 80px;
+  padding: 5px 0;
+  margin-left: 50px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: var(--font-color);
+}
+
+.nav-link:hover {
+  color: var(--highlight-color) !important;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .navLogo {
+    margin-left: 0;
+    width: 40px;
+    padding: 0;
+  }
+  .navbar-nav {
+    width: calc(100% - 50px);
+    justify-content: space-between;
+  }
+  .nav-link {
+    font-size: .8rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 355px) {
+  .nav-link {
+    font-size: .6rem;
+  }
+}
+
+/*****FOOTER*****/
+
+ footer {
+   padding-top: 50px;
+   background-color: black;
+ }
+
+ .footerContent {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 50px;
+ }

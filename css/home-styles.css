@@ -1,129 +1,9 @@
-:root {
-  --main-color: #78bbe6;
-  --second-color: #1b435d;
-  --font-color: #d5eeff;
-  --icon-color: #ff895d;
-  --highlight-color: #f16821;
-}
+/* welcome, about, work, contact sections */
 
-body {
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--second-color);
-  color: var(--font-color);
-}
-
-h1 {
-  font-family: 'Quattrocento', serif;
-  font-weight: bold;
-}
-
-h2 {
-  font-family: 'Quattrocento', serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-h3 {
-  font-family: 'Quattrocento', serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-h5 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: var(--icon-color);
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-
-span {
-  color: var(--highlight-color);
-}
-
-.nav-link {
-  color: var(--font-color);
-}
-
-.nav-link:hover {
-  color: var(--highlight-color) !important;
-}
-
-.photoCredit {
-  position: absolute;
-  bottom: 50px;
-  right: 20px;
-  color: gray;
-  font-size: 0.6rem;
-}
-
-@media (max-width: 576px) {
-
-  h1 {
-    font-size: 1.5rem;
-  }
-  h5 {
-    font-size: 1rem;
-  }
-  p {
-    font-size: 0.8rem;
-  }
-}
-
-/******************************NAVBAR SECTION********************************/
-
-.navbar {
-  background-color: var(--second-color) !important;
-}
-
-.navLogo {
-  width: 80px;
-  padding: 5px 0;
-  margin-left: 50px;
-}
-
-.navbar-collapse {
-  justify-content: flex-end;
-}
-
-.navbar-nav {
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-@media (max-width: 576px) {
-  .navbar-brand {
-    padding: 0;
-    margin: 0;
-  }
-  .navLogo {
-    margin-left: 0;
-    width: 40px;
-    padding: 0;
-  }
-  .navbar-nav {
-    width: calc(100% - 50px);
-    justify-content: space-between;
-  }
-  .nav-link {
-    font-size: .8rem;
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 355px) {
-  .nav-link {
-    font-size: .6rem;
-  }
-}
-
-/*****************************WELCOME SECTION********************************/
+/*****WELCOME SECTION******/
 
 #welcome {
-  background-image: url('images/light-trails-in-city.jpg');
+  background-image: url('../images/light-trails-in-city.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,7 +40,7 @@ span {
 
 }
 
-/********************************ABOUT SECTION******************************/
+/******ABOUT SECTION*****/
 
 #about {
   background: linear-gradient(180deg, black 5%, var(--main-color) 50%, black 80%);
@@ -233,12 +113,12 @@ span {
   }
 }
 
-/*******************************WORKS SECTION********************************/
+/*****WORKS SECTION******/
 
 #work {
   background-image:
   linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 1) 90%),
-  url('images/interior-empty-lot.jpg');
+  url('../images/interior-empty-lot.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -342,7 +222,7 @@ span {
 
 }
 
-/***************************CONTACT SECTION**********************************/
+/*******CONTACT SECTION*******/
 
 
 #contact {
@@ -424,47 +304,29 @@ input, textarea {
   }
 }
 
-/***************************FOOTER SECTION***********************************/
- footer {
-   padding-top: 50px;
-   background-color: black;
- }
+/******LOADING MESSAGE*******/
 
- .footerContent {
-   display: flex;
-   justify-content: space-between;
-   padding: 20px 50px;
- }
+#messageSending {
+  visibility: hidden;
+  background-color: var(--main-color);
+  color: black;
+  border: 2px solid var(--highlight-color);
+  border-radius: 20px;
+  text-align: center;
+  z-index: 2000;
+}
 
- /***********************MESSAGES PAGE************************************/
- .messageCard {
-   display: flex;
-   justify-content: space-between;
-   background-color: var(--bs-gray-dark);
- }
+#messageSending p {
+  padding: 20px;
+  font-weight: bold;
+}
 
- /********************LOADING MESSAGE**************************************/
- #messageSending {
-   visibility: hidden;
-   background-color: var(--main-color);
-   color: black;
-   border: 2px solid var(--highlight-color);
-   border-radius: 20px;
-   text-align: center;
-   z-index: 2000;
- }
+.spinner-border {
+  color: var(--highlight-color);
+}
 
- #messageSending p {
-   padding: 20px;
-   font-weight: bold;
- }
-
- .spinner-border {
-   color: var(--highlight-color);
- }
-
- @media (max-width: 576px) {
-   #messageSending {
-     width: 80%;
-   }
- }
+@media (max-width: 576px) {
+  #messageSending {
+    width: 80%;
+  }
+}
