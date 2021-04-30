@@ -16,7 +16,7 @@
   position: relative;
   background-color: black;
   width: 100%;
-  min-height: calc(100vh - 216px);
+  min-height: calc(100vh - 256px);
   border: 2px solid var(--second-color);
   border-radius: 2rem;
 }

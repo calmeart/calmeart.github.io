@@ -72,9 +72,13 @@ span {
   background-color: var(--second-color) !important;
 }
 
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .navLogo {
-  width: 80px;
-  padding: 5px 0;
+  width: 60px;
   margin-left: 50px;
 }
 
