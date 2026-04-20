@@ -1,178 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en" data-theme="navy-amber" data-mode="dark">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="viewport" content="initial-scale=1.0">
-  <meta name="description" content="Portfolio page of a back-end developer that showcases projects that are written using technologies like Node, Express, React, Bootstrap, and various others.">
-  <meta name="keywords" content="Portfolio, HTML, CSS, JavaScript, Node, Express, React, Git">
-  <meta name="author" content="Batuhan Doruk">
-  <title>Batuhan Doruk Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Batuhan Doruk Ozturk — Full-stack JavaScript/TypeScript developer specializing in Web3 and blockchain.">
+  <meta name="author" content="Batuhan Doruk Ozturk">
+  <title>Batuhan Doruk Ozturk — Full-stack & Web3 Developer</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quattrocento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main-styles.css">
-  <link rel="stylesheet" href="css/home-styles.css">
-
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("bd.portfolio.theme") || "navy-amber";
+        var m = localStorage.getItem("bd.portfolio.mode");
+        if (!m) m = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "dark";
+        document.documentElement.setAttribute("data-theme", t);
+        document.documentElement.setAttribute("data-mode", m);
+      } catch (e) {}
+    })();
+  </script>
   <script src="https://kit.fontawesome.com/35029fdc91.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-dark">
+  <nav class="navbar">
     <div class="container">
-      <a class="navbar-brand" href="/"><img class="navLogo" src="images/bd-logo.png" alt="site logo"></a>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-        <div class="navbar-nav">
-          <a class="nav-link mx-md-4" href="#about">ABOUT</a>
-          <a class="nav-link mx-md-4" href="#work">PROJECT</a>
-          <a class="nav-link mx-md-4" href="#contact">CONTACT</a>
-          <a class="nav-link mx-md-4" href="https://drive.google.com/file/d/1EpOCxAuKUwCaYEAQncYfrTtN3yie4xxn/view?usp=sharing" target="_blank">RESUME</a>
-        </div>
-      <!-- </div> -->
+      <a class="nav-brand" href="/"><img src="images/bd-logo.png" alt="BD logo"></a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="resume/Batuhan_Doruk_Ozturk_Resume_2026.pdf" target="_blank" rel="noopener" class="resume-link">Resume</a>
+      </div>
     </div>
   </nav>
 
-  <section id="welcome">
+  <section class="hero">
     <div class="container">
-      <div class="welcomeContent">
-        <h1 id="heading">Hello, my name is <span>Batuhan Doruk</span></h1>
-        <p>I am a self-taught back-end web developer with an engineering background</p>
-      </div>
-    </div>
-    <p class="photoCredit">Photo by Pixabay from Pexels.</p>
-  </section>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Full-stack · Web3 · Blockchain</span>
+          <h1>Hi, I'm <span>Batuhan Doruk</span></h1>
+          <p class="hero-role">JavaScript/TypeScript developer with 5+ years of experience, specializing in Web3 and blockchain development.</p>
+          <p class="hero-summary">I've shipped 10+ production applications across DeFi, fund administration, HR SaaS, loyalty platforms, e-commerce, and education. Former civil engineer — I bring a decade of engineering discipline to building end-to-end dApps and the infrastructure between smart contracts and the interfaces people actually use.</p>
 
-  <section id="about">
-    <div class="container">
-      <div class="aboutContent">
-        <h2>About</h2>
-        <p>I am a self-taught JavaScript developer currently located in Lviv, Ukraine. I have been learning the terms of web development, mainly focused on the back-end, through courses provided in freeCodeCamp, Udemy, and various other web
-          platforms, for the past year.</p>
-        <p>I love building web applications, implementing my ideas, and solving problems with coding. Currently, I am looking for an entry/junior level developer position. I work primarily with Node/Express but enjoy learning new technologies.</p>
-        <p>I have a degree in civil engineering and have been professionally working for five years in a technical office. Although as a developer I do not have professional experience yet, I am highly accustomed to the office environment, working
-          well with team members to deliver projects within deadline with satisfactory results.</p>
-        <p>What I can offer is a high learning curve, good analytical skills, and creative and logical thinking. I have a dynamic and sympathetic personality, often liked and appreciated by people and colleagues.</p>
-        <h3>Skills</h3>
-        <div id="techImages" class="techImages">
-          <div class="techItem">
-            <img class="techLogo" src="images/html5.svg" alt="HTML Logo">
-            <p class="techLabel">HTML</p>
+          <div class="stack-strip">
+            <p class="stack-label">Core Stack</p>
+            <div class="stack-icons">
+              <div class="tech"><img src="https://cdn.simpleicons.org/typescript" alt="TypeScript"><span>TypeScript</span></div>
+              <div class="tech"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js"><span>Next.js</span></div>
+              <div class="tech"><img src="https://cdn.simpleicons.org/react" alt="React"><span>React</span></div>
+              <div class="tech"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js"><span>Node.js</span></div>
+              <div class="tech"><img src="https://cdn.simpleicons.org/solidity" alt="Solidity"><span>Solidity</span></div>
+              <!-- <div class="tech"><img src="https://cdn.simpleicons.org/ethereum" alt="Viem / Wagmi"><span>Viem / Wagmi</span></div> -->
+              <!-- <div class="tech"><img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL"><span>PostgreSQL</span></div> -->
+              <div class="tech"><img src="https://cdn.simpleicons.org/docker" alt="Docker"><span>Docker</span></div>
+            </div>
           </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/css3.svg" alt="CSS Logo">
-            <p class="techLabel">CSS</p>
-          </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/node-dot-js.svg" alt="Node.js Logo">
-            <p class="techLabel">Node.js</p>
-          </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/express.svg" alt="Express Logo">
-            <p class="techLabel">Express</p>
-          </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/react.svg" alt="React Logo">
-            <p class="techLabel">React</p>
-          </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/mongodb.svg" alt="MongoDV Logo">
-            <p class="techLabel">MongoDB</p>
-          </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/graphql.svg" alt="GraphQL Logo">
-            <p class="techLabel">GraphQL</p>
-          </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/bootstrap.svg" alt="Bootstrap Logo">
-            <p class="techLabel">Bootstrap</p>
-          </div>
-          <div class="techItem">
-            <img class="techLogo" src="images/git.svg" alt="Git Logo">
-            <p class="techLabel">Git</p>
-          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="images/profile.jpg" alt="Batuhan Doruk Ozturk">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="work">
+  <section class="contact-strip">
     <div class="container">
-      <div class="projectContent">
-        <div class="projectTitle">
-          <h2>Projects</h2>
-          <p>The demo servers might be sleeping, please be patient when you view a project.</p>
-        </div>
-        <div class="projectBody">
-          <div class="row" id="projectContainer">
-
-          </div>
-        </div>
+      <p class="contact-meta">Istanbul, Turkey · Remote · Open to relocation</p>
+      <div class="contact-links">
+        <a href="mailto:batuhandoruk91@gmail.com" aria-label="Email">
+          <i class="far fa-envelope"></i><span>batuhandoruk91@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/batuhandorukozturk" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/calmeart" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i><span>GitHub</span>
+        </a>
       </div>
     </div>
-    <p class="photoCredit">Photo by Pixabay from Pexels.</p>
   </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="contactContent">
-        <h2>Get in touch with me</h2>
-        <h5>...by using any platform below: </h5>
-        <div class="contactImages">
-          <a href="https://forum.freecodecamp.org/u/calmeart/summary" target="_blank"><i class="fab fa-free-code-camp contactLogo"></i></a>
-          <a href="https://github.com/calmeart" target="_blank"><i class="fab fa-github contactLogo"></i></a>
-          <!-- <a href="https://twitter.com/calmeart" target="_blank"><i class="fab fa-twitter contactLogo"></i></a> -->
-          <a href="https://www.linkedin.com/in/btdoruk" target="_blank"><i class="fab fa-linkedin contactLogo"></i></a>
-          <a href="mailto:batuhandoruk91@gmail.com" target="_blank"><i class="far fa-envelope contactLogo"></i></a>
-        </div>
-        <h5>...or by sending me a direct message: </h5>
-        <form class="contactForm" id="contactForm" action="https://postamapi.herokuapp.com/messages" method="post">
-          <div class="mb-1">
-            <label for="inputName" class="form-label mb-0">Your Name: </label>
-            <input class="inputArea w-100" type="text" name="senderName" id="inputName" autocomplete="off" required>
-          </div>
-          <div class="mb-1">
-            <label for="inputMail" class="form-label mb-0">Your E-mail: </label>
-            <input class="inputArea w-100" type="email" name="senderMail" id="inputMail" autocomplete="off" required>
-          </div>
-          <div class="mb-1">
-            <label for="inputMessage" class="form-label mb-0">Your Message: </label>
-          </div>
-          <textarea class="inputArea w-100 mb-1" name="body" id="inputMessage" rows="5" cols="80" required></textarea>
-          <input type="hidden" name="platformId" value="604d2f9108886513b0663b2d">
-          <button class="btn w-100" type="submit" name="sendButton" id="sendButton">Send Message</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="position-fixed top-50 start-50 translate-middle" id="messageSending">
-      <p>This process might take up to 30 seconds...</p>
-      <div class="spinner-border" role="status"></div>
-      <p>You will be redirected to Home page after your message is sent</p>
-    </div>
-  </section>
-
 
   <footer>
     <div class="container">
-      <div class="footerContent">
-        <p>calmeart 2021</p>
-        <p>Portfolio v2.2.0</p>
-      </div>
+      <p>&copy; <span id="year"></span> Batuhan Doruk Ozturk</p>
+      <p>Portfolio v3.0</p>
     </div>
   </footer>
 
+  <div class="theme-switcher" role="toolbar" aria-label="Theme switcher">
+    <span class="label" style="font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);padding:0 0.4rem;">Theme</span>
+    <button type="button" data-theme-value="navy-amber" title="Navy + Amber">
+      <span class="swatch" style="background:#E8B86D"></span>Navy
+    </button>
+    <button type="button" data-theme-value="charcoal-teal" title="Charcoal + Teal">
+      <span class="swatch" style="background:#2DD4BF"></span>Charcoal
+    </button>
+    <button type="button" data-theme-value="ivory-coral" title="Ivory + Coral">
+      <span class="swatch" style="background:#E07856"></span>Ivory
+    </button>
+    <span class="divider"></span>
+    <button type="button" class="mode-toggle" data-mode-toggle aria-label="Toggle light/dark">
+      <i class="far fa-moon"></i>
+    </button>
+  </div>
 
-
-  <script src="index.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
+  <script src="js/theme.js"></script>
 </body>
-
 </html>

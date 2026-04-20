@@ -1,17 +1,16 @@
 # calmeart.github.io
 
-*[Visit the GitHub page for this repo!](https://calmeart.github.io/)*
+*[Visit the site](https://calmeart.github.io/)*
 
-## About Site
+Personal portfolio for Batuhan Doruk Ozturk — full-stack JavaScript/TypeScript developer, specializing in Web3 and blockchain.
 
-This page is designed to be a front-page for my development career. It will showcase a summary of a description of me and what I am working on lately. And it will develop and blossom as time goes by.
+## Structure
 
-## Future Implementations
+- `index.html` — landing page (hero, core stack, contact)
+- `about.html` — detailed narrative, experience timeline, skills, personal projects
+- `resume/` — the current resume PDF, served directly from GitHub Pages
+- `css/styles.css` — single stylesheet; three color palettes × light/dark mode via CSS custom properties
+- `js/theme.js` — theme switcher (palette + mode), preferences persisted to localStorage
+- `images/` — logo, profile photo, hero background
 
-This page in its current version is a one-page website that includes minimum information that allows me to present myself to an exterior opinion.
-
-### In future versions:
-
-* About will navigate to a more detailed page with a picture of me, more information about who I am, what is my journey, and my hobbies.
-* It will redirect to a blog site people could follow my journey of changing career to become a web developer.
-* Projects will navigate to a different page that not only show six but show all my projects that can be sorted, filtered, and categorized by technology, date, importance, etc.
+No build step. Plain HTML/CSS/vanilla JS, served directly by GitHub Pages.

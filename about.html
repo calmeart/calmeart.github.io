@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="navy-amber" data-mode="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Batuhan Doruk Ozturk — experience, skills, and projects.">
+  <meta name="author" content="Batuhan Doruk Ozturk">
+  <title>About — Batuhan Doruk Ozturk</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("bd.portfolio.theme") || "navy-amber";
+        var m = localStorage.getItem("bd.portfolio.mode") || "dark";
+        document.documentElement.setAttribute("data-theme", t);
+        document.documentElement.setAttribute("data-mode", m);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="https://kit.fontawesome.com/35029fdc91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a class="nav-brand" href="/"><img src="images/bd-logo.png" alt="BD logo"></a>
+      <div class="nav-links">
+        <a href="about.html" class="active">About</a>
+        <a href="resume/Batuhan_Doruk_Ozturk_Resume_2026.pdf" target="_blank" rel="noopener" class="resume-link">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow">About</span>
+      <h1>Beyond the resume.</h1>
+      <p>This page is the long version — the detail behind the bullet points, the engineering philosophy behind the stack choices, and the arc that got me here.</p>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container narrative">
+      <span class="section-title">Intro</span>
+      <h2>Who I am</h2>
+      <p>Full-stack JavaScript/TypeScript developer with over 5 years of experience, specializing in Web3 and blockchain development. I've contributed to over 10 production applications across DeFi, fund administration, HR SaaS, loyalty platforms, e-commerce, and education — working across end-to-end onchain transactional flows, multi-network multi-wallet dApp architecture, robust backend systems, scalable and resource-efficient frontend components with real-time data layers and strategic caching, and infrastructure and deployment across Docker, VPS, and cloud services.</p>
+      <p>My expertise lies in building full-stack dApps and backend systems, primarily using TypeScript, Next.js, Node.js, Viem, Wagmi, and Solidity. With over a decade of engineering experience — including five years in civil engineering and construction project administration — I tend to anticipate issues early and approach them from the technical, user experience, and business angles at once.</p>
+      <p>I'm resourceful, can find multiple ways to solve a problem, and can take a concept and deliver it as a working feature. I use AI daily in roughly 80% of my coding workflow — agents for automated bug detection, code scanning, and merge request analysis — but I never ship code without personal review. AI accelerates me; it doesn't replace judgment.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <span class="section-title">Career</span>
+      <h2>Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2024 — May 2026</div>
+          <div class="timeline-body">
+            <h3>Full-Stack Web3 Developer</h3>
+            <div class="company">Fume (via 5w155) · Remote</div>
+            <p>On-chain fund administration platform enabling crypto fund managers to create, operate, and report on tokenized investment vehicles across EVM chains (Ethereum, Arbitrum, Base, BSC).</p>
+            <ul>
+              <li>Designed end-to-end transactional flows covering signature, approval, deposit, and withdrawal paths across onchain and offchain steps — validating input, signing and dispatching write-contract calls, parsing receipts, and reconciling state into PostgreSQL.</li>
+              <li>Architected a multi-network, multi-wallet dApp routing each operation to the correct chain and wallet, handling EOA and smart-account paths with paymaster-sponsored gas via ERC-4337.</li>
+              <li>Built a unified write-operation module handling network/wallet detection, smart-wallet compatibility checks, input validation, transaction lifecycle stages, and progress feedback.</li>
+              <li>Read, analyzed, and contributed to Solidity protocol design decisions, ran local experiments to validate proposals, contributed to gas optimization passes, and implemented a function-level onchain authorization system controlled by wallet address with matching admin UI.</li>
+              <li>Implemented subgraph indexing across multiple linked contracts and block ranges, cutting event query latency by up to 5x and unlocking near-real-time UI updates.</li>
+              <li>Implemented NAV prediction and extrapolation using linear, compound, geometric, and regression models, with charting layers aggregating onchain event data and offchain database records.</li>
+              <li>Drove production reliability and 3x page load improvements through targeted caching, Next.js SSR/ISR, and continuous refinement guided by Sentry, Alchemy, and Vercel log analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jul 2022 — Dec 2023</div>
+          <div class="timeline-body">
+            <h3>Full-Stack Developer</h3>
+            <div class="company">5w155 · Remote</div>
+            <p>Delivered full-stack solutions across multiple concurrent client projects in HR, loyalty, real estate, and mobile sectors — configurable backend engines, third-party wallet and payment integrations, admin dashboards, React Native mobile apps, and legacy framework migrations.</p>
+            <ul>
+              <li>Architected a configurable promotion and reward engine for a multi-tenant loyalty platform (ClientManager), evaluating multiple criteria per individual cardholder on a Koa 2 / MySQL API.</li>
+              <li>Integrated Apple Wallet (PassKit) and Google Wallet for digital loyalty cards, Stripe for merchant billing, QR-code payment generation, and SMS/email campaign dispatch; built the React admin dashboard and the Expo mobile app with barcode-scan loyalty reader and OTP sign-in.</li>
+              <li>Built a recruitment pipeline for an HR SaaS (HubTeam) with drag-and-drop status tracking, Google Calendar integration with auto-generated Meet links, and candidate CV generation via the Google Docs batch-update API.</li>
+              <li>Migrated a Swiss real estate quotation platform (Adhoc) from Angular to React — refactored authentication and permissions, fixed price-formula bugs across property types, extended the PDFTron generation pipeline, and implemented a chatbot assistant.</li>
+              <li>Built product screens, onboarding flows, and type-safe data fetching via tRPC and TanStack Query on a React Native / Expo loyalty app (Olocapp) using NativeWind.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2021 — Jul 2022</div>
+          <div class="timeline-body">
+            <h3>Junior Full-Stack Developer</h3>
+            <div class="company">LaSoft Agency · Lviv, Ukraine</div>
+            <p>Built features across 6 client projects spanning education, marketing, e-commerce, and health sectors.</p>
+            <ul>
+              <li>Developed interactive educational games with multiple difficulty levels, custom Vimeo media players, and Stripe payment integration for Bluemanor Academy.</li>
+              <li>Implemented SSO/SAML authentication (Azure AD, OKTA) and SEO optimization with Google structured data for Lessontrek (cybersecurity education SaaS).</li>
+              <li>Built live chat (WebSocket), vendor search mechanics with Mixpanel analytics, and graphical dashboards across Vendorstan and Protogetic.</li>
+              <li>Upgraded Node.js v6 to v14 and refactored auth/authorization for role-based access on ALS-AID (medical mobile application).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Mar 2021 — Jun 2021</div>
+          <div class="timeline-body">
+            <h3>Junior Full-Stack Developer</h3>
+            <div class="company">Freelance · Lviv, Ukraine</div>
+            <p>Built RESTful APIs with Node/Express and responsive UIs with React and EJS; implemented authentication with Passport and JWT; worked across PostgreSQL, MongoDB, and a GraphQL/Apollo e-commerce model.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Feb 2016 — Aug 2020</div>
+          <div class="timeline-body">
+            <h3>Civil / Site Engineer — Technical Office</h3>
+            <div class="company">Onur Construction · Saudi Arabia → Ukraine → Moldova → Ukraine</div>
+            <p>Five years of multi-site construction project administration — Mecca, Lviv, Comrat, Kyiv — managing teams of engineers, maintaining communication with clients, suppliers, and subcontractors, and developing spreadsheet/VBA progress-tracking systems. This is where I learned to plan under constraint, anticipate downstream problems, and communicate across disciplines. It still shapes how I approach software.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <span class="section-title">Toolkit</span>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Languages</h4>
+          <p>TypeScript, JavaScript, Solidity, HTML, CSS/Sass, SQL</p>
+        </div>
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <p>React, Next.js (Pages &amp; App Router), TanStack Query/Router/Start, Tailwind CSS, Material-UI, Headless UI, Radix UI, Framer Motion, React Native, Expo</p>
+        </div>
+        <div class="skill-card">
+          <h4>Backend</h4>
+          <p>Node.js, Express, Koa, Next.js API Routes, REST APIs, RPCs, GraphQL/Apollo, Socket.IO, WebSockets</p>
+        </div>
+        <div class="skill-card">
+          <h4>Blockchain &amp; Web3</h4>
+          <p>Solidity, Foundry, Hardhat, OpenZeppelin, Proxy Contracts (Beacon/Module patterns), Viem, Wagmi, Ethers, Privy, Alchemy, Paymaster (ERC-4337), The Graph</p>
+        </div>
+        <div class="skill-card">
+          <h4>Databases &amp; ORMs</h4>
+          <p>PostgreSQL, MySQL, MongoDB, Redis; Prisma, Sequelize, Mongoose</p>
+        </div>
+        <div class="skill-card">
+          <h4>Cloud &amp; DevOps</h4>
+          <p>Vercel, Railway, Cloudflare, AWS S3, Garage, Supabase, Neon, Docker, VPS, Nginx</p>
+        </div>
+        <div class="skill-card">
+          <h4>Auth &amp; Security</h4>
+          <p>JWT, Passport.js, NextAuth, SAML/SSO (Azure AD, OKTA), OAuth, Zod, bcrypt</p>
+        </div>
+        <div class="skill-card">
+          <h4>Testing</h4>
+          <p>Jest, Vitest, React Testing Library, Mocha/Chai, Playwright (E2E), Matchstick (subgraph), Supertest</p>
+        </div>
+        <div class="skill-card">
+          <h4>Integrations</h4>
+          <p>Stripe, Google APIs (Calendar, Docs, Maps, Wallet), Apple Wallet, Sentry, Mixpanel, i18next, OpenAI API, Google Gemini AI, Resend, Telegram Bot API</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <span class="section-title">Side Work</span>
+      <h2>Personal Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>DecentLvck — Decentralized Lottery Protocol</h3>
+          <p>Solidity protocol (Governor + Lottery contracts) with fixed-fee entries, commission-based treasury sweeps, and winner selection via Chainlink VRF. Built the dApp frontend with wallet-connect flows; deployed on Arbitrum Sepolia using Foundry.</p>
+          <div class="project-stack">
+            <span>Solidity</span><span>Foundry</span><span>Chainlink VRF</span><span>React 19</span><span>TanStack Start</span><span>wagmi</span><span>viem</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Keylangan / MyHomes — Real Estate Listing Aggregator</h3>
+          <p>Listing aggregator with a Telegram bot intake pipeline, Google Gemini for structured field extraction, duplicate detection, a credits/tier system, and a Chrome Extension (MV3) for automated cross-posting with anti-duplicate evasion.</p>
+          <div class="project-stack">
+            <span>Next.js 16</span><span>React 19</span><span>Prisma</span><span>PostgreSQL</span><span>Grammy</span><span>Gemini</span><span>NextAuth v5</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>KeyLangMagic — Chrome Extension (MV3)</h3>
+          <p>Secure bridge between the MyHomes web app and Facebook that automates cross-posting. Three-layer architecture: detector content script, background service worker with IndexedDB image storage, and executor content script — plus anti-detection utilities and queue UI.</p>
+          <div class="project-stack">
+            <span>Manifest V3</span><span>Service Workers</span><span>IndexedDB</span><span>Content Scripts</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Nutriart / Nutriart-AI — Nutrition Tracker</h3>
+          <p>Personal nutrition tracker for foods, recipes, and time-stamped meal entries with macro/micro breakdowns. Evolved into an AI-assisted version where a GPT assistant parses free-form meal descriptions and matches them to a grounded food/recipe database.</p>
+          <div class="project-stack">
+            <span>Next.js 15</span><span>React 19</span><span>MongoDB</span><span>Prisma</span><span>OpenAI API</span><span>Recharts</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-strip">
+    <div class="container">
+      <p class="contact-meta">Let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:batuhandoruk91@gmail.com" aria-label="Email">
+          <i class="far fa-envelope"></i><span>batuhandoruk91@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/batuhandorukozturk" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/calmeart" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i><span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Batuhan Doruk Ozturk</p>
+      <p>Portfolio v3.0</p>
+    </div>
+  </footer>
+
+  <div class="theme-switcher" role="toolbar" aria-label="Theme switcher">
+    <span class="label" style="font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);padding:0 0.4rem;">Theme</span>
+    <button type="button" data-theme-value="navy-amber" title="Navy + Amber">
+      <span class="swatch" style="background:#E8B86D"></span>Navy
+    </button>
+    <button type="button" data-theme-value="charcoal-teal" title="Charcoal + Teal">
+      <span class="swatch" style="background:#2DD4BF"></span>Charcoal
+    </button>
+    <button type="button" data-theme-value="ivory-coral" title="Ivory + Coral">
+      <span class="swatch" style="background:#E07856"></span>Ivory
+    </button>
+    <span class="divider"></span>
+    <button type="button" class="mode-toggle" data-mode-toggle aria-label="Toggle light/dark">
+      <i class="far fa-moon"></i>
+    </button>
+  </div>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
