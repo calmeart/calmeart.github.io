@@ -145,10 +145,13 @@ html[data-theme="ivory-coral"][data-mode="dark"] {
   justify-content: space-between;
   height: 64px;
 }
-.nav-brand img {
-  height: 32px;
-  filter: var(--icon-filter);
+.nav-brand .bd-logo {
+  display: block;
+  width: 36px;
+  height: 36px;
 }
+.nav-brand .bd-logo-body { fill: var(--text); }
+.nav-brand .bd-logo-glasses { fill: var(--accent); }
 .nav-links {
   display: flex;
   align-items: center;
@@ -175,11 +178,22 @@ html[data-theme="ivory-coral"][data-mode="dark"] {
 }
 
 /* ==========================================================================
+   Landing first-screen (navbar + hero + contact all fit within 100vh)
+   ========================================================================== */
+.viewport {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.viewport > .navbar { flex: 0 0 auto; }
+.viewport > .hero { flex: 1 1 auto; min-height: 0; }
+.viewport > .contact-strip { flex: 0 0 auto; }
+
+/* ==========================================================================
    Hero (landing)
    ========================================================================== */
 .hero {
   position: relative;
-  min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -293,7 +307,7 @@ html[data-theme="ivory-coral"][data-mode="dark"] {
 .contact-strip {
   position: relative;
   z-index: 2;
-  padding: 2rem 0;
+  padding: 0.85rem 0;
   border-top: 1px solid var(--border);
   background: color-mix(in srgb, var(--bg) 70%, transparent);
 }
