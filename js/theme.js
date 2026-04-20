@@ -2,7 +2,7 @@
   var STORAGE_KEY = "bd.portfolio.theme";
   var MODE_KEY = "bd.portfolio.mode";
   var DEFAULT_THEME = "navy-amber";
-  var DEFAULT_MODE = "dark";
+  var DEFAULT_MODE = "light";
 
   var html = document.documentElement;
 
