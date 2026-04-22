@@ -37,6 +37,7 @@
         </svg>
       </a>
       <div class="nav-links">
+        <a href="/">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html" class="active">Projects</a>
         <a href="resume/Batuhan_Doruk_Ozturk_Resume_2026.pdf" target="_blank" rel="noopener" class="resume-link">Resume</a>
@@ -77,7 +78,7 @@
             </div>
             <!-- Add URL here when available -->
           </div>
-          <h3>Fume Protocol</h3>
+          <h3>Fume</h3>
           <p class="tagline">On-chain fund administration platform for crypto fund managers</p>
           <p class="description">On-chain fund administration platform enabling crypto fund managers to create, operate, and report on tokenized investment vehicles across EVM chains (Ethereum, Arbitrum, Base, BSC). The system orchestrates the full fund lifecycle — manager and investor onboarding, KYC and fund setup, subscription and redemption flows, onchain NAV calculation, cost and liability tracking, and periodic distribution settlement.</p>
 
@@ -207,27 +208,28 @@
           <div class="project-header">
             <div class="project-meta">
               <span class="company-tag">5w155</span>
-              <span>Full-Stack Developer (Maintenance)</span>
+              <span>Frontend Developer (Short-term)</span>
               <span>·</span>
               <span>2022 — 2023</span>
             </div>
             <!-- Add URL here when available -->
           </div>
           <h3>Olocapp</h3>
-          <p class="tagline">React Native loyalty app inside a Turborepo monorepo</p>
-          <p class="description">React Native customer loyalty application built inside a Turborepo monorepo (shared Prisma database, tRPC API, and types packages with a Next.js admin sibling).</p>
+          <p class="tagline">Local events & promotions discovery on React Native / Expo</p>
+          <p class="description">Local events and promotions discovery app where users browse upcoming concerts, restaurant offers, and city events on a mobile feed. Built inside a Turborepo monorepo with a Next.js admin sibling. Short engagement focused on the React Native frontend.</p>
 
           <h4>Highlights</h4>
           <ul class="highlights">
-            <li>Built and polished product screens — loyalty card list, offer details, profile, and onboarding flows.</li>
-            <li>Consumed shared tRPC router for type-safe data fetching with TanStack Query.</li>
-            <li>Wired up Jotai for local state; used NativeWind for styling and Shopify FlashList for high-performance feed views.</li>
-            <li>Used expo-router for file-based navigation.</li>
+            <li>Built the main post feed — a scrollable pager with per-post countdown timers and pause/resume tracking.</li>
+            <li>Fixed a double-trigger bug in the page-selection event handler.</li>
+            <li>Created the Settings screens (account settings and profile), the Search and Bookmarks screen with search bar and result cards, and the Preferences filter page.</li>
+            <li>Built an animated progress bar component and integrated SVG icon support into the Metro bundler config.</li>
+            <li>Styled everything with NativeWind throughout.</li>
           </ul>
 
           <h4>Stack</h4>
           <div class="project-stack">
-            <span>React Native</span><span>Expo SDK 48</span><span>Expo Router</span><span>TypeScript</span><span>NativeWind</span><span>Tailwind CSS</span><span>TanStack Query</span><span>tRPC</span><span>Jotai</span><span>Shopify FlashList</span><span>Turborepo</span><span>pnpm workspaces</span>
+            <span>React Native</span><span>Expo</span><span>Expo Router</span><span>TypeScript</span><span>NativeWind</span><span>react-native-svg</span><span>Turborepo</span><span>pnpm workspaces</span>
           </div>
         </article>
 
@@ -246,18 +248,17 @@
           </div>
           <h3>Meta Recipe</h3>
           <p class="tagline">Food-science & recipe analytics dashboard</p>
-          <p class="description">Food-science and recipe analytics web application that lets users browse ingredient-aroma statistical matrices, compose recipes, and visualize nutritional and flavour metrics. Django REST backend was owned by another engineer; I worked on the React frontend.</p>
+          <p class="description">Food-science and recipe analytics application with ingredient-aroma statistical data and nutritional dashboards. The Django REST backend was owned by another engineer; I worked on the React frontend.</p>
 
           <h4>Highlights</h4>
           <ul class="highlights">
             <li>Fixed rendering and routing issues across the recipe browser and dashboard views.</li>
-            <li>Updated Chart.js / react-chartjs-2 configurations to match new API response shapes.</li>
-            <li>Reworked several Material-UI screens.</li>
+            <li>Updated Chart.js configurations to match updated API responses.</li>
           </ul>
 
           <h4>Stack</h4>
           <div class="project-stack">
-            <span>React</span><span>React Router</span><span>Material-UI v4</span><span>Chart.js</span><span>react-chartjs-2</span><span>React-Bootstrap</span><span>math.js</span>
+            <span>React</span><span>React Router</span><span>Material-UI v4</span><span>Chart.js</span><span>Axios</span>
           </div>
         </article>
 
@@ -438,6 +439,39 @@
         </article>
 
         <!-- ============================================================
+             Personal — Listing Aggregator (unnamed)
+             ============================================================ -->
+        <article class="project-entry" data-company="personal">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="company-tag">Personal</span>
+              <span>Solo Build — Full-Stack + AI + Telegram Bot</span>
+              <span>·</span>
+              <span>2024 — 2026</span>
+            </div>
+            <!-- Name and link intentionally withheld until launch -->
+          </div>
+          <h3>Listing Aggregator</h3>
+          <p class="tagline">Real estate listing aggregator with Telegram-bot ingestion and AI fallback</p>
+          <p class="description">Solo full-stack build of a real estate listing aggregator targeting a regional market. Users share a post link via a Telegram bot, and a backend pipeline resolves URLs, extracts metadata, downloads and hashes listing images, and uses a Gemini AI fallback to extract structured fields (price, location, amenities) when scraping is incomplete. Name and public link intentionally withheld until launch.</p>
+
+          <h4>Highlights</h4>
+          <ul class="highlights">
+            <li>Architected the full backend pipeline: URL resolution, Open Graph and embedded-JSON extraction, image download and hashing, canonical-post-ID duplicate detection, and property-matching to cluster reposts.</li>
+            <li>Integrated Google Gemini AI as a structured-extraction fallback for listings where scraping is incomplete.</li>
+            <li>Built a tiered credits and share-limit system (Free / Pro / Agent), a browsable community feed with saved posts, notes, and status tracking, and admin dashboards.</li>
+            <li>Integrated regional PSGC address lookup, a Tiptap rich-text property editor, Resend transactional emails, and next-intl internationalization.</li>
+            <li>Deployed on a DigitalOcean VPS with Docker Compose, Nginx reverse proxy, Cloudflare for DNS / proxying / email routing, and Cloudflare R2 for storage.</li>
+            <li>Deferred monetization during beta in favor of a PRO points system to avoid payment-KYC and visa-compliance risk.</li>
+          </ul>
+
+          <h4>Stack</h4>
+          <div class="project-stack">
+            <span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Grammy</span><span>Google Gemini AI</span><span>AWS S3</span><span>Resend</span><span>NextAuth v5</span><span>Zod</span><span>sharp</span><span>Tailwind CSS v4</span><span>TanStack Query</span><span>Tiptap</span><span>next-intl</span><span>Docker</span><span>Nginx</span><span>DigitalOcean</span><span>Cloudflare R2</span>
+          </div>
+        </article>
+
+        <!-- ============================================================
              Personal — DecentLvck
              ============================================================ -->
         <article class="project-entry" data-company="personal">
@@ -521,6 +555,7 @@
 
           <h4>Highlights</h4>
           <ul class="highlights">
+            <li><strong>Chrome extension (Manifest V3)</strong> — Bridge extension between a React web app and Facebook for automated cross-posting. Three-layer architecture: a detector content script that handshakes with the web app via <code>window.postMessage</code>, a background service worker that verifies signed jobs and queues work using IndexedDB for image storage, and an executor content script injected into Facebook that performs the posting. Anti-duplicate-detection utilities (zero-width character injection, homoglyph substitutions, whitespace variants, per-upload image noise / quality shifts), auth and wrong-account recovery flows, and a queue processor UI. Manifest V3 service workers, content scripts, <code>externally_connectable</code>, alarms, cookies, vanilla JS, IndexedDB, Canvas API, cryptographic job signature verification.</li>
             <li><strong>contract-playgrounds</strong> — Smart contract sandbox. Solidity, Hardhat, Nomic Foundation toolbox.</li>
             <li><strong>custom-token & sol_one</strong> — ERC token experiments. Solidity, Foundry.</li>
             <li><strong>convert-psgc</strong> — CLI tool to convert complex government geographic city data from Excel to structured JSON. TypeScript (tsx), xlsx.</li>
