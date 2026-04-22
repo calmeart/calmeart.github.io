@@ -56,6 +56,14 @@
       });
     }
 
+    var labelToggle = document.querySelector(".theme-switcher .label");
+    var switcher = document.querySelector(".theme-switcher");
+    if (labelToggle && switcher) {
+      labelToggle.addEventListener("click", function () {
+        switcher.classList.toggle("collapsed");
+      });
+    }
+
     var year = document.getElementById("year");
     if (year) year.textContent = new Date().getFullYear();
   }
