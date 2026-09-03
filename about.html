@@ -70,6 +70,23 @@
       <div class="timeline">
 
         <div class="timeline-item">
+          <div class="timeline-date">May 2026 — Present</div>
+          <div class="timeline-body">
+            <h3>Full-Stack Engineer</h3>
+            <div class="company">Keylangan · Remote</div>
+            <p>Production platform that turns unstructured, free-form social posts into clean, deduplicated, searchable property listings. I own the whole system end to end — the Next.js/PostgreSQL application, a standalone stateless extraction service on isolated egress communicating over cryptographically signed callbacks, and the self-hosted deployment.</p>
+            <ul>
+              <li>Designed a multi-stage processing pipeline as independent Redis-queue stages joined by discriminated-union job contracts, so an unhandled stage transition fails the type-check rather than at runtime.</li>
+              <li>Built idempotent, at-least-once processing against unreliable external services, with a reconciler covering four distinct loss modes — including committed-but-undelivered results that every other status check reports as finished.</li>
+              <li>Benchmarked four LLM providers on real posts against adjudicated ground truth, scoring accuracy, cost, latency, and output-truncation headroom; the resulting chain cut extraction cost 7x and latency 9x while raising field accuracy.</li>
+              <li>Diagnosed and fixed a database egress problem that scaled with table size, by pushing perceptual-hash distance filtering out of the application and into PostgreSQL at no loss of recall.</li>
+              <li>Automated duplicate review with perceptual image hashing, banded locality-sensitive indexing, and a confidence-gated AI verdict layer: on a caseload of several hundred decisions a day, roughly 96% now resolve without human review.</li>
+              <li>Ship the system as a versioned Docker image built in CI, deployable or reversible with a single command, covered by unit and integration tests against a disposable containerized PostgreSQL.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
           <div class="timeline-date">Jan 2024 — May 2026</div>
           <div class="timeline-body">
             <h3>Full-Stack Web3 Developer</h3>
