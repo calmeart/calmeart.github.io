@@ -1,6 +1,6 @@
 # calmeart.github.io
 
-*[Visit the site](https://calmeart.github.io/)*
+*[Visit the site](https://batuhandoruk.dev/)*
 
 Personal portfolio for Batuhan Doruk Ozturk — full-stack JavaScript/TypeScript developer, specializing in Web3 and blockchain.
 

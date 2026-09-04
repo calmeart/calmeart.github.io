@@ -7,6 +7,28 @@
   <meta name="author" content="Batuhan Doruk Ozturk">
   <title>About — Batuhan Doruk Ozturk</title>
 
+  <link rel="canonical" href="https://batuhandoruk.dev/about.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Batuhan Doruk Ozturk">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://batuhandoruk.dev/about.html">
+  <meta property="og:title" content="About — Batuhan Doruk Ozturk">
+  <meta property="og:description" content="About Batuhan Doruk Ozturk — experience, skills, and projects.">
+  <meta property="og:image" content="https://batuhandoruk.dev/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Batuhan Doruk Ozturk">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About — Batuhan Doruk Ozturk">
+  <meta name="twitter:description" content="About Batuhan Doruk Ozturk — experience, skills, and projects.">
+  <meta name="twitter:image" content="https://batuhandoruk.dev/images/og-image.jpg">
+
+  <link rel="icon" href="images/bd-logo.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="images/bd-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/bd-logo.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -23,6 +45,70 @@
     })();
   </script>
   <script src="https://kit.fontawesome.com/35029fdc91.js" crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://batuhandoruk.dev/#person",
+        "name": "Batuhan Doruk Ozturk",
+        "alternateName": "Batuhan Doruk",
+        "url": "https://batuhandoruk.dev/",
+        "image": "https://batuhandoruk.dev/images/og-image.jpg",
+        "jobTitle": "Full-Stack Developer",
+        "description": "Full-stack JavaScript/TypeScript developer with 5+ years of experience, building AI-assisted data pipelines, backend systems, and Web3 products.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Istanbul",
+          "addressCountry": "TR"
+        },
+        "knowsAbout": [
+          "TypeScript",
+          "JavaScript",
+          "Next.js",
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "Solidity",
+          "Viem",
+          "Wagmi",
+          "Ethereum",
+          "Web3",
+          "React Native"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/btdoruk",
+          "https://github.com/calmeart"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://batuhandoruk.dev/#website",
+        "url": "https://batuhandoruk.dev/",
+        "name": "Batuhan Doruk Ozturk",
+        "publisher": {
+          "@id": "https://batuhandoruk.dev/#person"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://batuhandoruk.dev/about.html#webpage",
+        "url": "https://batuhandoruk.dev/about.html",
+        "name": "About — Batuhan Doruk Ozturk",
+        "isPartOf": {
+          "@id": "https://batuhandoruk.dev/#website"
+        },
+        "mainEntity": {
+          "@id": "https://batuhandoruk.dev/#person"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -72,16 +158,17 @@
         <div class="timeline-item">
           <div class="timeline-date">May 2026 — Present</div>
           <div class="timeline-body">
-            <h3>Full-Stack Engineer</h3>
+            <h3>Full-Stack Engineer (Independent)</h3>
             <div class="company">Keylangan · Remote</div>
-            <p>Production platform that turns unstructured, free-form social posts into clean, deduplicated, searchable property listings. I own the whole system end to end — the Next.js/PostgreSQL application, a standalone stateless extraction service on isolated egress communicating over cryptographically signed callbacks, and the self-hosted deployment.</p>
+            <p>Production platform that turns unstructured, free-form, human written descriptions into clean, deduplicated, searchable listings. I own the system end to end — the Next.js/PostgreSQL application, a standalone stateless extraction service with isolated network egress and signed callbacks, and the self-hosted deployment.</p>
             <ul>
-              <li>Designed a multi-stage processing pipeline as independent Redis-queue stages joined by discriminated-union job contracts, so an unhandled stage transition fails the type-check rather than at runtime.</li>
-              <li>Built idempotent, at-least-once processing against unreliable external services, with a reconciler covering four distinct loss modes — including committed-but-undelivered results that every other status check reports as finished.</li>
-              <li>Benchmarked four LLM providers on real posts against adjudicated ground truth, scoring accuracy, cost, latency, and output-truncation headroom; the resulting chain cut extraction cost 7x and latency 9x while raising field accuracy.</li>
+              <li>Designed a multi-stage processing pipeline as modular service handlers, bounded by strict job contracts, handling heavy concurrent workloads while allowing each stage to be changed or scaled independently.</li>
+              <li>Built idempotent retries and automatic recovery mechanisms for failure scenarios across external services and internal pipeline stages, preventing lost work and duplicate writes.</li>
+              <li>Compared four LLM providers on real data using accuracy, cost, latency, and output truncation metrics, then used the results to select a chain that cut extraction cost 7x and latency 9x while raising field accuracy.</li>
               <li>Diagnosed and fixed a database egress problem that scaled with table size, by pushing perceptual-hash distance filtering out of the application and into PostgreSQL at no loss of recall.</li>
-              <li>Automated duplicate review with perceptual image hashing, banded locality-sensitive indexing, and a confidence-gated AI verdict layer: on a caseload of several hundred decisions a day, roughly 96% now resolve without human review.</li>
+              <li>Automated duplicate review using image hashing, banded locality-sensitive indexing, and a confidence-gated AI verdict layer handling several hundred decisions a day, resolving roughly 96% without human review.</li>
               <li>Ship the system as a versioned Docker image built in CI, deployable or reversible with a single command, covered by unit and integration tests against a disposable containerized PostgreSQL.</li>
+              <li>Implemented PostHog product analytics and Axiom logging, then built custom event logs and operational dashboards to track pipeline throughput, queue health, and missing callbacks.</li>
             </ul>
           </div>
         </div>
