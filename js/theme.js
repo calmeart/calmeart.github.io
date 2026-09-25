@@ -34,7 +34,10 @@
       toggle.innerHTML = mode === "dark"
         ? '<i class="fas fa-sun"></i>'
         : '<i class="fas fa-moon"></i>';
-      toggle.setAttribute("aria-label", mode === "dark" ? "Switch to light mode" : "Switch to dark mode");
+      var isTurkish = html.lang.toLowerCase().split("-")[0] === "tr";
+      toggle.setAttribute("aria-label", mode === "dark"
+        ? (isTurkish ? "Açık temaya geç" : "Switch to light mode")
+        : (isTurkish ? "Koyu temaya geç" : "Switch to dark mode"));
     }
   }
 

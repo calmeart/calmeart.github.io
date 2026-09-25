@@ -658,6 +658,33 @@ section.content-section:last-of-type { border-bottom: none; }
   padding: 0;
   font-size: 1rem;
 }
+.theme-switcher.collapsed .lang-divider { display: block; }
+.theme-switcher .lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+.theme-switcher .lang-toggle a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  color: var(--muted);
+  transition: background 150ms ease, color 150ms ease;
+}
+.theme-switcher .lang-toggle a:hover { color: var(--text); }
+.theme-switcher .lang-toggle a.active {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.theme-switcher .lang-toggle .flag {
+  flex-shrink: 0;
+  border-radius: 2px;
+}
 
 /* ==========================================================================
    Footer
